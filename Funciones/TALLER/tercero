@@ -1,0 +1,10 @@
+"""Funcion que reciba como parametro una lista de datos numericos y que retorne la suma de ellos"""
+
+b= int(input("¿ Cuántos números va a ingresar? "))
+res= [int(input("Ingrese los números: ")) for _ in range(b)]
+# processing
+def Suma(res):
+    luk= [(x+x)for x,x in zip(res, res)]
+    rob= sum(luk)
+    print(rob)
+Suma(res)
